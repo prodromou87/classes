@@ -1,0 +1,381 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+>>> Job starts
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 256, tx: 16, ty: 16, gridX: 16, gridY: 16, reps: 20, epsilon: 1e-06
+
+Using Double precision arithmetic
+
+Using naive GPU algorithm
+
+Device computation time: 0.133378 sec. [50.314872 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@    256    16     16      20   0.00e+00     0.0  1.33e-01    50.3
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 512, tx: 16, ty: 16, gridX: 32, gridY: 32, reps: 10, epsilon: 1e-06
+
+Using Double precision arithmetic
+
+Using naive GPU algorithm
+
+Device computation time: 0.612374 sec. [43.835210 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@    512    16     16      10   0.00e+00     0.0  6.12e-01    43.8
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 1024, tx: 16, ty: 16, gridX: 64, gridY: 64, reps: 5, epsilon: 1e-06
+
+Using Double precision arithmetic
+
+Using naive GPU algorithm
+
+Device computation time: 2.163635 sec. [49.626754 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@   1024    16     16       5   0.00e+00     0.0  2.16e+00    49.6
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 2048, tx: 16, ty: 16, gridX: 128, gridY: 128, reps: 1, epsilon: 1e-06
+
+Using Double precision arithmetic
+
+Using naive GPU algorithm
+
+Device computation time: 3.539440 sec. [48.538383 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@   2048    16     16       1   0.00e+00     0.0  3.54e+00    48.5
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 256, tx: 32, ty: 32, gridX: 8, gridY: 8, reps: 20, epsilon: 1e-06
+
+Using Double precision arithmetic
+
+Using naive GPU algorithm
+
+Device computation time: 0.131096 sec. [51.190671 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@    256    32     32      20   0.00e+00     0.0  1.31e-01    51.2
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 512, tx: 32, ty: 32, gridX: 16, gridY: 16, reps: 10, epsilon: 1e-06
+
+Using Double precision arithmetic
+
+Using naive GPU algorithm
+
+Device computation time: 0.538817 sec. [49.819396 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@    512    32     32      10   0.00e+00     0.0  5.39e-01    49.8
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 1024, tx: 32, ty: 32, gridX: 32, gridY: 32, reps: 5, epsilon: 1e-06
+
+Using Double precision arithmetic
+
+Using naive GPU algorithm
+
+Device computation time: 2.071479 sec. [51.834548 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@   1024    32     32       5   0.00e+00     0.0  2.07e+00    51.8
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 2048, tx: 32, ty: 32, gridX: 64, gridY: 64, reps: 1, epsilon: 1e-06
+
+Using Double precision arithmetic
+
+Using naive GPU algorithm
+
+Device computation time: 3.266222 sec. [52.598596 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@   2048    32     32       1   0.00e+00     0.0  3.27e+00    52.6
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 256, tx: 16, ty: 16, gridX: 16, gridY: 16, reps: 20, epsilon: 1e-06
+
+Using Single precision arithmetic
+
+Using naive GPU algorithm
+
+Device computation time: 0.107123 sec. [62.646470 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@    256    16     16      20   0.00e+00     0.0  1.07e-01    62.6
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 512, tx: 16, ty: 16, gridX: 32, gridY: 32, reps: 10, epsilon: 1e-06
+
+Using Single precision arithmetic
+
+Using naive GPU algorithm
+
+Device computation time: 0.414242 sec. [64.801598 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@    512    16     16      10   0.00e+00     0.0  4.14e-01    64.8
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 1024, tx: 16, ty: 16, gridX: 64, gridY: 64, reps: 5, epsilon: 1e-06
+
+Using Single precision arithmetic
+
+Using naive GPU algorithm
+
+Device computation time: 1.746054 sec. [61.495341 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@   1024    16     16       5   0.00e+00     0.0  1.75e+00    61.5
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 2048, tx: 16, ty: 16, gridX: 128, gridY: 128, reps: 1, epsilon: 1e-06
+
+Using Single precision arithmetic
+
+Using naive GPU algorithm
+
+Device computation time: 2.745078 sec. [62.584264 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@   2048    16     16       1   0.00e+00     0.0  2.75e+00    62.6
+
+Error report for Device result:
+C[0, 0] is 1.64444, should be: 1.64445
+  *** A total of 1 differences, error = 5.68434e-13
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 256, tx: 32, ty: 32, gridX: 8, gridY: 8, reps: 20, epsilon: 1e-06
+
+Using Single precision arithmetic
+
+Using naive GPU algorithm
+
+Device computation time: 0.109101 sec. [61.510737 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@    256    32     32      20   0.00e+00     0.0  1.09e-01    61.5
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 512, tx: 32, ty: 32, gridX: 16, gridY: 16, reps: 10, epsilon: 1e-06
+
+Using Single precision arithmetic
+
+Using naive GPU algorithm
+
+Device computation time: 0.461384 sec. [58.180479 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@    512    32     32      10   0.00e+00     0.0  4.61e-01    58.2
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 1024, tx: 32, ty: 32, gridX: 32, gridY: 32, reps: 5, epsilon: 1e-06
+
+Using Single precision arithmetic
+
+Using naive GPU algorithm
+
+Device computation time: 1.880611 sec. [57.095373 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@   1024    32     32       5   0.00e+00     0.0  1.88e+00    57.1
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 2048, tx: 32, ty: 32, gridX: 64, gridY: 64, reps: 1, epsilon: 1e-06
+
+Using Single precision arithmetic
+
+Using naive GPU algorithm
+
+Device computation time: 2.957160 sec. [58.095839 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@   2048    32     32       1   0.00e+00     0.0  2.96e+00    58.1
+
+Error report for Device result:
+C[0, 0] is 1.64444, should be: 1.64445
+  *** A total of 1 differences, error = 5.68434e-13
+
+
+>>> Job Ends
+Sun Feb  9 15:06:52 PST 2014
+
+ + --------------------------------------------------------------------------
+ +        Job name: NAIVE_ALL
+ +          Job Id: 8201966.cvrsvc09-ib
+ +          System: dirac
+ +     Queued Time:  Sun Feb  9 15:01:26 2014
+ +      Start Time:  Sun Feb  9 15:03:41 2014
+ + Completion Time:  Sun Feb  9 15:06:52 2014
+ +            User: aprodrom
+ +           Group: aprodrom
+ +        MOM Host: dirac27
+ +           Queue: dirac_reg
+ +  Req. Resources: neednodes=1:ppn=8:fermi,nodes=1:ppn=8:fermi,walltime=00:05:00
+ +  Used Resources: cput=00:03:06,mem=126732kb,vmem=38010288kb,walltime=00:03:12
+ +     Acct String: gpgpu
+ +   PBS_O_WORKDIR: /global/u2/a/aprodrom/Turnin/executables
+ +     Submit Args:  naive.sh
+ +        Job Exit: 0
+ +      Nodes used: dirac27-ib  
+ + --------------------------------------------------------------------------
+

@@ -1,0 +1,26 @@
+\relax 
+\select@language{english}
+\@writefile{toc}{\select@language{english}}
+\@writefile{lof}{\select@language{english}}
+\@writefile{lot}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}\textbf  {High Performance Matrix Multiplication}}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}\textbf  {Cache Blocking}}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Performance with Single Blocking Level}}{2}}
+\newlabel{fig:one_blocking_level}{{2.1}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}\textbf  {Second Level of Cache Blocking}}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Performance with Two Blocking Levels}}{3}}
+\newlabel{fig:second_blocking_level}{{2.2}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}\textbf  {Optimal Cache Blocking Sizes}}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}\textbf  {Handling the Boundary Cases}}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}\textbf  {SIMD Optimization -- SSE Instructions}}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}\textbf  {Other Optimizations}}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}\textbf  {Matrix Transposition}}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}\textbf  {Aligned Temporary Arrays}}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Performance using SSE Intrinsics}}{6}}
+\newlabel{fig:sse}{{3.1}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}\textbf  {Write Combining}}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}\textbf  {Loop Unrolling}}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}\textbf  {Verification}}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}\textbf  {Conclusions}}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces A comparison of all optimizations}}{7}}
+\newlabel{fig:all_in}{{6.1}{7}}

@@ -1,0 +1,55 @@
+                   CSE 260, Parallel Computation
+                            (Winter 2014)
+              Department of Computer Science and Engineering
+                  University of California, San Diego
+
+
+                        Team Self Evaluation Form
+
+Each team must submit one copy of this self evaluation form.
+The members of each team should discuss how they
+worked together and what to write for the evaluation.
+
+(1) List the names of your team members:
+
+A: Andreas Prodomou
+B: Samuel Wasmundt
+C:
+
+
+(2) Estimate how much time each team member devoted to this project, in HOURS.
+A 30           B 30             C
+meetings 2
+coding 23
+writeup 4 
+planning (alone) 1
+total (including meetings) 25-30
+
+
+(3) Describe
+	We initially wanted to get the matrix multiplication to work with just tiling. To this extent we both worked together to implement it as we were both new to Cuda programming. When this was implemented we then continued adding features individually working on them. Andreas headed up working on merging the multiply add, loop unrolling, and prefetching. Sam worked on memory coalescing and memory bank conflict avoidance. We then got together and combined out individual efforts and were able to get an implementation that merged these techniques. To further assist in the writeup and understanding what exactly each optimization was doing/effecting our results we implemented function calls that were then used to only call a specific optimization/set of optimizations. These are documented within our writeup, but this was very beneficial to us to see exactly what optimizations we were getting the biggest impact from!
+
+(a) what the major responsibilities of each team member were;
+        Andreas - merging the multiply add, loop unrolling, and  prefetching
+
+        Sam - memory coalescing and memory bank conflict avoidance
+
+        Both - initial matrix multiply with tiling in Cuda, writeup
+
+(b) whether or not you completed the assignment;
+        Neither of us had specific assignments, since we share an office space there is an open line of communication about the progress and we collaboratively worked towards completion. If one individual got stuck with a part, there was a collaborative effort to resolve it.
+
+(c) the major strengths and weaknesses in your team, e.g. how
+    your team worked together;
+        Strengths: communication, both have a computer architecture background which helps with the conceptual understanding of the projects.
+        Weaknesses: Nothing came up this go around.
+
+(d) the lessons learned from these events;
+	Cuda programming can be a lot of fun! It's a remarkable way to gain huge performance gains for certain kinds of workloads. The Matrix multiply is just one of these that is a valid justification of this.
+
+(e) whether and how you plan to change the way your work together and
+        We worked well together overall, no complaints.
+
+(f) anything else that comes to mind.
+        Was a fun project.
+

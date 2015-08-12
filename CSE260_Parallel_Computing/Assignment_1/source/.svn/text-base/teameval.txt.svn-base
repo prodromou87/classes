@@ -1,0 +1,79 @@
+                    CSE 260, Parallel Computation
+                                (Winter 2014)
+                Department of Computer Science and Engineering 	
+                        University of California, San Diego 	
+
+
+                        Team Self Evaluation Form
+
+Each team must submit one copy of this self evaluation form. 
+The members of each team should discuss how they
+worked together and what to write for the evaluation.
+
+(1) List the names of your team members:
+
+A: Andreas Prodomou
+
+ 
+B: Samuel Wasmundt
+
+ 
+C:
+
+ 
+(2) Estimate how much time each team member devoted to this project, in HOURS.
+
+  	                        A 25 	       B 25             C
+meetings 2	  	  	 
+coding 19	  	  	 
+writeup 3	  	  	 
+planning (alone) 1 	  	  	 
+total (including meetings) 25	  	  	 
+
+
+(3) Describe 
+	Adreas devoted a lot of time to the initial work of getting the svn
+setup, and working on getting the cache blocking implemented. Sam then built
+off of Andreas work and implemented the SSE matrix multiplication that was
+able to handle any blocksize as well as any matrix sizes.
+
+	At that point we worked together to look at the code and integrate
+further optimizations such as write combining, 0 padding and temp array
+alignment, and others that proved to be not as benefitial such as transposing
+B. 
+	For the write up, we pretty much split this up with each person
+writing the specifics for the code/optimizations that person implemented. 
+
+(a) what the major responsibilities of each team member were;
+	Andreas - getting initial svn setup, cache blocking, memory alignment
+
+	Sam - SSE Intrinsics, matrix multiplication of any dimensions and
+handling the boundary cases. 
+
+	Both - loop unrolling, write combining, transpose B, writeup
+
+(b) whether or not you completed the assignment;
+	Neither of us had specific assignments, since we share an office space
+there is an open line of communication about the progress and we
+collaboratively worked towards completion.
+
+(c) the major strengths and weaknesses in your team, e.g. how
+    your team worked together;
+	Strengths: communication, both have a computer architecture background
+which helps with the conceptual understanding of the projects. 
+	Weaknesses: communication :) we tend to both think we are correct on
+occasion. 
+	
+(d) the lessons learned from these events;
+	Focus on the major ideas and not get hung up on the little things that
+may take a really long time to implement but in the end don't help that much.
+
+(e) whether and how you plan to change the way your work together and
+	We worked well together overall, no complaints. 
+
+(f) anything else that comes to mind.
+	A better introduction to the use of SSE intrinsic operations would
+have been nice.
+
+
+

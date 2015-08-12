@@ -1,0 +1,76 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{fullpage}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[hyphens]{url}
+\usepackage[breaklinks,linkcolor=black,citecolor=black,urlcolor=black,bookmarks=true,bookmarksopen=false,pdftex]{hyperref}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[protrusion=true,expansion=true,kerning]{microtype}
+\usepackage{algpseudocode}
+
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\topskip}{0in}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\R}{\mathbb{R}}
+
+\def\dash---{\kern.16667em---\penalty\exhyphenpenalty\hskip.16667em\relax}
+
+% TODO: FILL IN NAME, ID, AND COLLABORATORS HERE
+\def\name{ANDREAS PRODROMOU}
+\def\id{A53049230}
+\def\collabs{NONE}
+% END PART TO FILL IN
+
+
+\begin{document}
+
+\newlength{\boxwidth}
+\setlength{\boxwidth}{\textwidth}
+\addtolength{\boxwidth}{-2cm}
+\noindent\framebox[\textwidth]{\hfil
+\parbox[t]{\boxwidth}{%
+{\bfseries CSE\,105: Automata and Computability Theory \hfill Autumn 2014}
+\begin{center}\huge Homework \#2 Solutions\end{center}
+\name\hfill\id%
+}\hfil}
+\vspace{0.7cm}
+
+\noindent\textbf{Collaborated with:} \collabs
+\bigskip
+
+
+\noindent\textbf{Solution to Problem 2}\\
+
+% PROBLEM 2 SOLUTION GOES HERE
+\textbf{a.} This is an example of a DFA with an unreachable state. State 2 cannot be reached by any string since there are no incoming edges to it.
+
+\begin{center}\includegraphics {unreachableState.png}\end{center}
+
+\textbf{b.} The following function returns the set of all reachable states, given a DFA M. In every iteration of the outer loop, the set of reachable states is updated. Furthermore, once a state is denoted as reacheble, it will never be visited again, since it will be subtracted from the $new$ set. Consequently, the algorithm is guaranteed to terminate.
+
+\begin{algorithmic}
+\Function{findReachable}{DFA M}
+    \State $reachable \gets \{q_0\}$
+    \State $new \gets \{q_0\}$
+
+	\Repeat 
+	    \State $temp \gets \{\}$
+	    \For {each $q \in new$}
+	    	\For {all $c \in \Sigma$}
+	    		\State $temp \gets temp \cup [p \mid p = \delta(q,c)]$
+	    	\EndFor
+	    \EndFor
+	    \State $new \gets temp \setminus reachable$
+	    \State $reachable \gets reachable \cup new$
+	\Until {$new$ $!=$ $\{\}$}    
+    
+    \State \Return $reachable$
+\EndFunction
+\end{algorithmic}
+
+\end{document}

@@ -1,0 +1,55 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{fullpage}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[hyphens]{url}
+\usepackage[breaklinks,linkcolor=black,citecolor=black,urlcolor=black,bookmarks=true,bookmarksopen=false,pdftex]{hyperref}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[protrusion=true,expansion=true,kerning]{microtype}
+
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\topskip}{0in}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\R}{\mathbb{R}}
+
+\def\dash---{\kern.16667em---\penalty\exhyphenpenalty\hskip.16667em\relax}
+
+% TODO: FILL IN NAME, ID, AND COLLABORATORS HERE
+\def\name{ANDREAS PRODROMOU}
+\def\id{A53049230}
+\def\collabs{NONE}
+% END PART TO FILL IN
+
+
+\begin{document}
+
+\newlength{\boxwidth}
+\setlength{\boxwidth}{\textwidth}
+\addtolength{\boxwidth}{-2cm}
+\noindent\framebox[\textwidth]{\hfil
+\parbox[t]{\boxwidth}{%
+{\bfseries CSE\,105: Automata and Computability Theory \hfill Autumn 2014}
+\begin{center}\huge Homework \#1 Solutions\end{center}
+\name\hfill\id%
+}\hfil}
+\vspace{0.7cm}
+
+\noindent\textbf{Collaborated with:} \collabs
+\bigskip
+
+
+\noindent\textbf{Solution to Problem 2}\\
+
+% PROBLEM 2 SOLUTION GOES HERE
+\textbf{a.} Since $a \in P(m)$, it can be written as $a = im$, where $i \in \Z$. Similarly, since $b \in P(m)$, it can be written as $b = jm$, where $j \in \Z$. Consequently, $a + b$ can be written as $im + jm$ which is equal to $(i + j)m$. Since the set $\Z$ is closed under addition, $i+j \in \Z$. Thus , $P(m)$ is closed under addition since $(i + j)m \in \Z \implies a+b \in \Z$.\\
+
+\textbf{b.} Similarly to (a), since $a,b \in P(m)$, they can be written as $a = im$, and $b = jm$ respectively, where $i,j \in \Z$. Consequently, $ab = imb$. Since $b = jm$ and $j,m \in \Z \implies b \in \Z$. Thus, $ib \in \Z$ and $(ib)m \in P(m) \implies ab \in P(m)$.\\
+
+\textbf{c.} By the definition of A and B we know that $A+B = \{a+b \mid a \in A, b \in B\} = \{im + jn \mid i,j \in \Z, m,n \in \Z^+\}$. Let's assume that $r \in \Z$ is the gcd of m and n. This means that $m = cr$ and $n = kr$, where $c,k \in \Z$. Consequently, $A+B$ can be written as $A+B = \{icr + jkr \mid i,j,c,k \in \Z, r \in \Z^+\} = \{(ic+jk)r \mid i,j,c,k \in \Z, r \in \Z^+\}$. And since $(ic+jk) \in \Z$ ($\Z$ is closed under addition), $A+B = P(r)$.
+
+\end{document}

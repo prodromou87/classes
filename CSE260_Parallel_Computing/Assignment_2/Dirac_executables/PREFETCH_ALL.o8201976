@@ -1,0 +1,204 @@
+Warning: no access to tty (Bad file descriptor).
+Thus no job control in this shell.
+>>> Job starts
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 256, tx: 16, ty: 4, gridX: 4, gridY: 16, reps: 20, epsilon: 1e-06
+
+Using Double precision arithmetic
+
+Using +prefetch GPU algorithm
+
+Device computation time: 0.049836 sec. [134.658982 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@    256    16      4      20   0.00e+00     0.0  4.98e-02   134.7
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 512, tx: 16, ty: 4, gridX: 8, gridY: 32, reps: 10, epsilon: 1e-06
+
+Using Double precision arithmetic
+
+Using +prefetch GPU algorithm
+
+Device computation time: 0.193246 sec. [138.908755 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@    512    16      4      10   0.00e+00     0.0  1.93e-01   138.9
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 1024, tx: 16, ty: 4, gridX: 16, gridY: 64, reps: 5, epsilon: 1e-06
+
+Using Double precision arithmetic
+
+Using +prefetch GPU algorithm
+
+Device computation time: 0.720386 sec. [149.050895 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@   1024    16      4       5   0.00e+00     0.0  7.20e-01   149.1
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 2048, tx: 16, ty: 4, gridX: 32, gridY: 128, reps: 1, epsilon: 1e-06
+
+Using Double precision arithmetic
+
+Using +prefetch GPU algorithm
+
+Device computation time: 1.097926 sec. [156.475637 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@   2048    16      4       1   0.00e+00     0.0  1.10e+00   156.5
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 256, tx: 16, ty: 4, gridX: 4, gridY: 16, reps: 20, epsilon: 1e-06
+
+Using Single precision arithmetic
+
+Using +prefetch GPU algorithm
+
+Device computation time: 0.022373 sec. [299.952021 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@    256    16      4      20   0.00e+00     0.0  2.24e-02   300.0
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 512, tx: 16, ty: 4, gridX: 8, gridY: 32, reps: 10, epsilon: 1e-06
+
+Using Single precision arithmetic
+
+Using +prefetch GPU algorithm
+
+Device computation time: 0.075553 sec. [355.294519 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@    512    16      4      10   0.00e+00     0.0  7.56e-02   355.3
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 1024, tx: 16, ty: 4, gridX: 16, gridY: 64, reps: 5, epsilon: 1e-06
+
+Using Single precision arithmetic
+
+Using +prefetch GPU algorithm
+
+Device computation time: 0.287686 sec. [373.234118 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@   1024    16      4       5   0.00e+00     0.0  2.88e-01   373.2
+
+
+Device result: answers matched to within 1e-06
+
+
+1 Devices
+
+Device 0 has 14 cores
+Device # 0 has 2.624451 GB global memory
+Device is a Tesla C2050, capability: 2.0
+CUDA Driver version: 6000, runtime version: 5050
+
+n: 2048, tx: 16, ty: 4, gridX: 32, gridY: 128, reps: 1, epsilon: 1e-06
+
+Using Single precision arithmetic
+
+Using +prefetch GPU algorithm
+
+Device computation time: 0.446933 sec. [384.394708 gflops]
+
+      N     TX     TY    Reps       t_h     GF_h      t_d      GF_d
+@   2048    16      4       1   0.00e+00     0.0  4.47e-01   384.4
+
+Error report for Device result:
+C[0, 0] is 1.64444, should be: 1.64445
+  *** A total of 1 differences, error = 5.68434e-13
+
+
+>>> Job Ends
+Sun Feb  9 15:15:12 PST 2014
+
+ + --------------------------------------------------------------------------
+ +        Job name: PREFETCH_ALL
+ +          Job Id: 8201976.cvrsvc09-ib
+ +          System: dirac
+ +     Queued Time:  Sun Feb  9 15:01:54 2014
+ +      Start Time:  Sun Feb  9 15:13:44 2014
+ + Completion Time:  Sun Feb  9 15:15:12 2014
+ +            User: aprodrom
+ +           Group: aprodrom
+ +        MOM Host: dirac26
+ +           Queue: dirac_reg
+ +  Req. Resources: neednodes=1:ppn=8:fermi,nodes=1:ppn=8:fermi,walltime=00:05:00
+ +  Used Resources: cput=00:01:25,mem=126716kb,vmem=38010276kb,walltime=00:01:28
+ +     Acct String: gpgpu
+ +   PBS_O_WORKDIR: /global/u2/a/aprodrom/Turnin/executables
+ +     Submit Args:  prefetch.sh
+ +        Job Exit: 0
+ +      Nodes used: dirac26-ib  
+ + --------------------------------------------------------------------------
+

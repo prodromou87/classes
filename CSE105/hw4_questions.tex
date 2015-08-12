@@ -1,0 +1,96 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{fullpage}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[hyphens]{url}
+\usepackage[breaklinks,linkcolor=black,citecolor=black,urlcolor=black,bookmarks=true,bookmarksopen=false,pdftex]{hyperref}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[protrusion=true,expansion=true,kerning]{microtype}
+
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\topskip}{0in}
+
+\def\dash---{\kern.16667em---\penalty\exhyphenpenalty\hskip.16667em\relax}
+
+\newcommand{\rev}{^{\scriptscriptstyle\mathcal{R}}}
+\newcommand{\spc}{\textvisiblespace}
+\newcommand{\yields}{\Rightarrow}
+\newcommand{\derives}{\stackrel{*}{\Rightarrow}}
+
+\begin{document}
+
+\newlength{\boxwidth}
+\setlength{\boxwidth}{\textwidth}
+\addtolength{\boxwidth}{-2cm}
+\noindent\framebox[\textwidth]{\hfil
+\parbox[t]{\boxwidth}{%
+{\bfseries CSE\,105: Automata and Computability Theory \hfill Autumn 2014}
+\begin{center}\huge Homework \#4\end{center}
+Due: Thursday, December 11th, 2014%
+}\hfil}
+\vspace{0.7cm}
+
+\thispagestyle{empty}
+
+\begin{description}
+
+\item[Problem 1] Show that the class of decidable (i.e., recursive)
+  languages is closed under Kleene star.
+
+  \textbf{Hint:} There's an elegant algorithm, using dynamic
+  programming, that makes $O(n^2)$ oracle calls when checking a string
+  of length~$n$; you might wish to describe this algorithm instead of
+  the na{\"\i}ve exponential one.
+
+\item[Problem 2] Show that the class of R.E.\ (i.e., recognizable)
+  languages is closed under intersection.
+
+\item[Problem 3] Consider a variant definition of Turing machines,
+  called \emph{always-right} Turing machines.  In such a machine, the
+  transition function $\delta\colon Q \times \Gamma \to Q \times
+  \Gamma \times \{R\}$ specifies that the machine always moves its
+  head right (``$R$'').  There is no way for a machine in the
+  always-right model to move its head left.
+
+  Show that the always-right Turing machine model is \emph{not}
+  equivalent to the Turing machine model defined in class and in
+  Sipser.
+
+  \textbf{Hint:} Always-right Turing machines are, in fact, equivalent
+  in power to DFAs.
+
+\item[Problem 4] Let $L_4$~be the language
+  \begin{displaymath}
+    \Bigl\{
+        \langle M,w \rangle
+      \Bigm|
+      \parbox{3.5in}{$M$~is a Turing machine, $w$~is a string,
+        and $M$ never moves its head left when run on input~$w$.}
+      \Bigr\} \enspace.
+  \end{displaymath}
+  Show that $L_4$ is decidable (i.e., recursive), by describing a
+  Turing machine that decides~$L_3$.
+
+  (Note that the Turing machines here are the ordinary Turing machines
+  defined in class and in Sipser, not the always-stay machines of
+  problem~3, and their transition function is allowed to specify a
+  move left.)
+
+\item[Problem 5] Let $L_5$~be the language
+  \begin{displaymath}
+    \bigl\{
+        \langle G, D \rangle
+      \bigm|
+      \text{$G$~is a CFG, D is a DFA, and
+        $L(D) \subseteq L(G)$.}
+      \bigr\} \enspace.
+  \end{displaymath}
+  Show that $L_5$ is undecidable.
+
+  Is $L_5$ R.E.?  Is it co-R.E.?
+
+\end{description}
+\end{document}

@@ -1,0 +1,123 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{fullpage}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[hyphens]{url}
+\usepackage[breaklinks,linkcolor=black,citecolor=black,urlcolor=black,bookmarks=true,bookmarksopen=false,pdftex]{hyperref}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[protrusion=true,expansion=true,kerning]{microtype}
+
+\setlength{\topmargin}{0in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\topskip}{0in}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\R}{\mathbb{R}}
+
+\def\dash---{\kern.16667em---\penalty\exhyphenpenalty\hskip.16667em\relax}
+
+\begin{document}
+
+\newlength{\boxwidth}
+\setlength{\boxwidth}{\textwidth}
+\addtolength{\boxwidth}{-2cm}
+\noindent\framebox[\textwidth]{\hfil
+\parbox[t]{\boxwidth}{%
+{\bfseries CSE\,105: Automata and Computability Theory \hfill Autumn 2014}
+\begin{center}\huge Homework \#1\end{center}
+Due: Tuesday, October 14th, 2014, 11:59 \textsc{pm}%
+}\hfil}
+\vspace{0.7cm}
+
+\begin{description}
+
+\item[Problem 1] Sign up for an account on Automata Tutor, at
+  \url{http://automatatutor.com}.  If you are a UCSD student, use your
+  official UCSD e-mail for your account, so that we know whom to
+  assign credit to.  If you are an extension student, use the same
+  e-mail address you gave us to use for GradeSource.  Enroll in
+  CSE~105's Automata Tutor section, which has Course~ID
+  ``\texttt{28CSE105(}'' and password ``\texttt{3A4F0ZUB}''.
+
+  You may practice designing automata using the practice problem
+  sets.
+
+  \begin{description}
+  \item[a--e.] Complete the five problems that constitute CSE~105's
+    HW1 on Automata Tutor.  For each problem, you will have three
+    chances.
+  \end{description}
+
+\item[Problem 2] Closure properties.
+  For a positive integer~$m$, we define the \emph{principal} of~$m$,
+  denoted $P(m)$, as the set $\{im \mid i \in \Z\}$.  For example,
+  $P(1)$~is just~$\Z$, and $P(2)$~is the even numbers.
+  \begin{description}
+  \item[a.] Prove that, for any positive integer~$m$, the set $P(m)$
+    is closed under addition.  (I.e., show that $a,b \in P(m)$ implies
+    $a+b \in P(m)$.)
+  \item[b.] Prove that, for any positive integer~$m$, the set~$P(m)$
+    is closed under multiplication with the set~$\Z$.  (I.e., show
+    that $a \in P(m)$, $b \in \Z$ implies $ab \in P(m)$.)
+  \item[c.] Prove that the set (of sets) $\mathfrak{P} = \bigl\{ P(m)
+    \bigm| m \in \Z^+ \bigr\}$ is closed under addition.  (I.e., show
+    that $A, B \in \mathfrak{P}$ implies $A+B \in \mathfrak{P}$.  Note
+    that here ``$A+B$'' is set addition, i.e., $\{a+b \mid a \in A, b
+    \in B \}$.)
+  \end{description}
+  For part c., you may wish to use the fact that if $r$ is the gcd of
+  $m$~and $n$ then there exist integers $u$~and $v$ such that $um + vn
+  = r$.
+\item[Problem 3] Haskell.
+
+  Install the Haskell Platform, either 2013.2 or 2014.2.  Read ``Notes
+  on Haskell,'' linked from the course Website.  Make sure that you
+  can load \texttt{DFA.hs} (also linked from the course Website) in
+  the GHCI interpreter.
+
+  For this problem, you will turn in a file, \texttt{hw1p3.hs}, that
+  defines a haskell variable \texttt{machine} that holds a 5-tuple DFA
+  for the following language:
+
+  \begin{quotation}
+    For the alphabet~$\{\texttt{0},\texttt{1}\}$, describe a DFA that
+    recognizes the language of all strings that, interpreted as
+    numbers in big-endian binary notation (i.e., with least
+    significant bit last), are divisible by 3.  In big-endian binary
+    notation, 11~is encoded as \texttt{1011}, 31337~as
+    \texttt{111101001101001}.  (It is okay for numbers to be
+    represented with leading zeroes.)
+
+    \textbf{Hint:} Suppose the number represented by $a_1 a_2 \cdots
+    a_{k}$ in big-endian binary has residue $x$~mod~3.  What residue
+    mod~3 does the number $a_1 a_2 \cdots a_{k} a_{k+1}$ have, as a
+    function of $x$~and the binary digit~$a_{k+1}$?
+
+    \textbf{Hint:} You need just three states.
+  \end{quotation}
+
+  (Note: you should define this machine manually, not use the JFLAP
+  import utility code.)
+
+  On the course Website, you can obtain a starter \texttt{hw1p3.hs}
+  file that imports the appropriate modules; your job is to fill in
+  the definition of the variable \texttt{machine} in that file.
+
+  You can test that your machine behaves correctly using
+  \texttt{evalDFA} (defined in \texttt{DFA.hs}) and the utility
+  function \texttt{intToBinary}, for converting a number to a
+  big-endian binary string, which is included in the starter file.
+
+  The starter file also includes a wrapper, called \texttt{test},
+  around these two functions, that converts its numeric argument to a
+  string (in big-endian binary format) and calls \texttt{evalDFA} on
+  the DFA in \texttt{machine} with the resulting string.  If your
+  machine is correct, \texttt{test} should evaluate to \texttt{True}
+  exactly when given an argument that is divisible by 3.
+
+
+\end{description}
+\end{document}
